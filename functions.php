@@ -14,4 +14,10 @@ function bootstrapstarter_enqueue_scripts() {
 add_action( 'wp_enqueue_scripts', 'bootstrapstarter_enqueue_styles' );
 add_action( 'wp_enqueue_scripts', 'bootstrapstarter_enqueue_scripts' );
 /* End Bootstrap */
+
+function bootstrapstarter_wp_setup() {
+    add_theme_support( 'title-tag' );
+}
+
+add_action( 'after_setup_theme', 'bootstrapstarter_wp_setup' );
 ?>
