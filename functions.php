@@ -15,6 +15,15 @@ add_action( 'wp_enqueue_scripts', 'bootstrapstarter_enqueue_styles' );
 add_action( 'wp_enqueue_scripts', 'bootstrapstarter_enqueue_scripts' );
 /* End Bootstrap */
 
+/* Font Awesome */
+add_action( 'wp_enqueue_scripts', 'custom_load_font_awesome' );
+function custom_load_font_awesome() {
+
+    wp_enqueue_style( 'font-awesome-free', '//use.fontawesome.com/releases/v5.8.2/css/all.css' );
+
+}
+/*
+
 /* Support for title */
 function bootstrapstarter_wp_setup() {
     add_theme_support( 'title-tag' );
