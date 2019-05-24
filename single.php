@@ -3,6 +3,9 @@
   <?php if (have_posts()) : ?>
     <?php while (have_posts()) : the_post(); ?>
       <div class="post">
+        <?php  if( has_post_thumbnail() ):
+            echo get_the_post_thumbnail();
+          endif; ?>
         <h1 class="post-title"><?php the_title(); ?></h1>
         <p class="post-info">
           Posté le <?php the_date(); ?> dans <?php the_category(', '); ?> par <?php the_author(); ?>.
