@@ -1,3 +1,6 @@
+</div>
+</div>
+</div>
     <footer class="blog-footer">
       <?php if ( is_active_sidebar( 'footer_copyright_text' ) ) { dynamic_sidebar( 'footer_copyright_text' ); } ?>
     </footer>

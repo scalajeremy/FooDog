@@ -11,6 +11,9 @@ Version: 1.0
 
 /* Variables */
 
+.row {
+  margin: 0;
+}
 .facebook {
   background-color: #8f89cd;
 }
@@ -28,6 +31,7 @@ Version: 1.0
 .blog-header {
   line-height: 1;
   border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 15px;
 }
 
 .blog-header-logo {
@@ -51,6 +55,17 @@ h1, h2, h3, h4, h5, h6 {
   .display-4 {
     font-size: 3rem;
   }
+}
+
+.nav a{
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: grey;
 }
 
 .nav-scroller {
@@ -136,26 +151,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 .blog-post-title a, .blog-post-title a:hover {
   color: black;
-  text-decoration: none;
 }
-.blog-post-category a {
-  background:
-     linear-gradient(
-       to bottom, var(--mainColor) 0%,
-       var(--mainColor) 100%
-     );
-    background-position: 0 100%;
-    background-repeat: repeat-x;
-    background-size: 4px 4px;
-  color: #000;
-  text-decoration: none;
-  transition: background-size .2s;
+.blog-post-category, .blog-post-category a, .blog-post-category a:hover {
+  color: orange;
+  font-size: 0.7rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
 }
 
-
-.blog-post-category a:hover{
-  background-size: 4px 50px;
-}
 /*
  * Footer
  */
@@ -168,6 +172,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 .blog-footer p:last-child {
   margin-bottom: 0;
+}
+
+.footer {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
 }
 
 /* Featured Images */
@@ -184,4 +194,30 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: 20px;
   margin-right: 20px;
   border-bottom: 1px solid #f2f2f2;
+}
+
+.cat-header{
+  background-color: #dddddd;
+  margin-bottom: .25rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Single */
+.single-post {
+  height: 730px;
+}
+.single-post img {
+  height: 730px;
+  object-fit: cover;
+}
+.single-title {
+  margin-bottom: .25rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
 }
