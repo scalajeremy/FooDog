@@ -11,6 +11,10 @@
       <meta charset="<?php bloginfo('charset'); ?>">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <meta name="description" content="">
+      <link rel="apple-touch-icon" sizes="180x180" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href"<?php echo get_stylesheet_directory_uri(); ?>/favicon/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon/favicon-16x16.png">
+      <link rel="manifest" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon/site.webmanifest">
         <header class="blog-header py-3">
         <div class="row py-5">
           <div class="col align-self-start">
@@ -39,4 +43,4 @@
     <?php wp_head(); ?>
   </head>
 <body <?php body_class(); ?> >
-  <div class="container">
+  <div class="container-fluid p-0">

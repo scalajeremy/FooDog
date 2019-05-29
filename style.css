@@ -6,8 +6,48 @@ Author URI: https://github.com/scalajeremy
 Version: 1.0
 */
 
-@import url('https://fonts.googleapis.com/css?family=Crimson+Text&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Raleway:700,900|Crimson+Text&display=swap');
+
+.block-title h3 {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    background-color: #fff;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: 30px;
+    margin: 0;
+    padding: 0 15px 0 0;
+    z-index: 10;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+.block-title, .widget-title {
+    font-family: Raleway;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    font-style: normal;
+    color: #111;
+    font-size: 12px;
+    display: block;
+    position: relative;
+    margin-bottom: 30px;
+  }
+
+  .block-title:after {
+      content: '';
+      height: 4px;
+      background-color: #f2f2f2;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 50%;
+      margin-top: -2px;
+      backface-visibility: hidden;
+      -webkit-backface-visibility: hidden;
+  }
 
 /* Variables */
 
@@ -48,15 +88,6 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Playfair Display", Georgia, "Times New Roman", serif;
 }
 
-.display-4 {
-  font-size: 2.5rem;
-}
-@media (min-width: 768px) {
-  .display-4 {
-    font-size: 3rem;
-  }
-}
-
 .nav a{
   font-size: 0.9rem;
   font-weight: bold;
@@ -68,74 +99,6 @@ h1, h2, h3, h4, h5, h6 {
   color: grey;
 }
 
-.nav-scroller {
-  position: relative;
-  z-index: 2;
-  height: 2.75rem;
-  overflow-y: hidden;
-}
-
-.nav-scroller .nav {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  padding-bottom: 1rem;
-  margin-top: -1px;
-  overflow-x: auto;
-  text-align: center;
-  white-space: nowrap;
-  -webkit-overflow-scrolling: touch;
-}
-
-.nav-scroller .nav-link {
-  padding-top: .75rem;
-  padding-bottom: .75rem;
-  font-size: .875rem;
-}
-
-.card-img-right {
-  height: 100%;
-  border-radius: 0 3px 3px 0;
-}
-
-.flex-auto {
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-}
-
-.h-250 { height: 250px; }
-@media (min-width: 768px) {
-  .h-md-250 { height: 250px; }
-}
-
-/*
- * Blog name and description
- */
-.blog-title {
-  margin-bottom: 0;
-  font-size: 2rem;
-  font-weight: 400;
-}
-.blog-description {
-  font-size: 1.1rem;
-  color: #999;
-}
-
-@media (min-width: 40em) {
-  .blog-title {
-    font-size: 3.5rem;
-  }
-}
-
-/* Pagination */
-.blog-pagination {
-  margin-bottom: 4rem;
-}
-.blog-pagination > .btn {
-  border-radius: 2rem;
-}
-
 /*
  * Blog posts
  */
@@ -145,15 +108,16 @@ h1, h2, h3, h4, h5, h6 {
 .blog-post-title {
   margin-bottom: .25rem;
   font-size: 1.3rem;
-  font-weight: bold;
+  font-weight: 700;
+  letter-spacing: 1px;
   text-transform: uppercase;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 .blog-post-title a, .blog-post-title a:hover {
   color: black;
 }
 .blog-post-category, .blog-post-category a, .blog-post-category a:hover {
-  color: orange;
+  color: #ff8d6a;
   font-size: 0.7rem;
   font-weight: bold;
   text-transform: uppercase;
@@ -197,7 +161,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .cat-header{
-  background-color: #dddddd;
+  background-color: #f7f7f7;
   margin-bottom: .25rem;
   font-size: 1.1rem;
   font-weight: bold;
@@ -216,8 +180,9 @@ h1, h2, h3, h4, h5, h6 {
 .single-title {
   margin-bottom: .25rem;
   font-size: 1.5rem;
-  font-weight: bold;
+  font-weight: 700;
+  letter-spacing: 1px;
   text-transform: uppercase;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
   text-align: center;
 }
